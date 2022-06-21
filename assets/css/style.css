@@ -18,7 +18,7 @@ body {
 
 header {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    background-color: pink;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -67,19 +67,16 @@ header nav ul li a:hover {
 }
 
 .section-title {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 36px;
     font-weight: bold;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
+    border-bottom: 3px solid hotpink;
+    padding: 20px;
     margin: 0 auto 35px auto;
     width: 50%;
     text-align: center;
 }
 
-.primary-border {
-    color: var(--secondary-color);
-}
 
 .flex-row {
     display: flex;  
@@ -105,6 +102,8 @@ header nav ul li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 5px var(--secondary-color) solid;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -130,5 +129,35 @@ header nav ul li a:hover {
 }
 
 .work-img:hover {
-    text-shadow: lavenderblush;
+    color: rgba(255, 255, 255, 0.8);
+    background: var(--secondary-color);
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
 }
+
+.info {
+    display: inline-block;
+    justify-content: space-around;
+    font-family: Georgia, Arial, sans-serif;
+    text-align: center;
+    color: pink;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: lighter;
+    border-radius: 15px;
+    text-shadow: none;
+    font-size: 1.55vw;
+}
+
+
+
+
+    
