@@ -128,3 +128,7 @@ header nav ul li a:hover {
 .under-work {
     text-align: center;
 }
+
+.work-img:hover {
+    text-shadow: lavenderblush;
+}
