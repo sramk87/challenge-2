@@ -157,130 +157,113 @@ header nav ul li a:hover {
     font-size: 1.55vw;
 }    
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-  }
-
-/* media query for smaller desktop screens and smaller */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
+       /* this will be applied on any screen smaller than 980px */
 
-    * {
+      * {
         justify-content: center;
-    }
-
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-    }
-  
-    header h1 {
-      width: 100%;
-      text-align: center;
-    }
-  
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    header nav ul li a {
-      font-size: 20px;
-    }
-  
-    .intro {
-      text-align: center;
-    }
-  
-    .section-title {
-      width: 80%;
-    }
-  
-    .my-work {
-      flex: 0 70%;
-    }
-  
-    .work-img {
-      flex: 1 100%;
-    }
-
-    .first-work {
-        flex: 1 100%;
-        flex-wrap: wrap;
-    }
-  }
-  
-  /* media query for tablets and smaller */
-  
-  @media screen and (max-width: 768px) {
-
-    * {
-        justify-content: center;
-    }
-
-      section {
-          padding: 30px 15px;
-      }
-      
-      .under-work {
-          flex: 1 100%;
-          text-align: center;
-      }
-  
-      .intro {
-          flex: 2 100%;
-          text-align: center;
-          justify-content: center;
-      }
-  
-      .work-img {
-          flex: 0 32%;
-          margin-right: 0;
-          margin-top: 15px;
-          margin-bottom: 15px;
-      }
-  
-      .work {
-          flex: 100%;
-      }
-
-      .first-work {
-        flex: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         flex-wrap: wrap;
       }
-  }
-  
-  /* media query for mobile phones and smaller */
-  
-  @media screen and (max-width: 575px) {
-  
-    * {
-        justify-content: center;
-    }
-      .section-title {
-          width: 95%;
-      }
-  
+
       .intro p {
-          width: 100%
-      }
-  
-      .my-work {
-          flex: 0 100%;
-      }
-  
-      .contact {
-          text-align: center;
-      }
-  
-      .info > * {
-          flex: 0 100%;
+        text-align: center;
       }
 
-    .first-work {
+      header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+
+      body {
+        display: block;
+      }
+}
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+      /* this will be applied on any screen between 768px and 575px */
+    
+       * {
+        justify-content: center;
+      }
+      section {
+        padding: 30px 15px;
+      }
+
+      .intro p {
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 30px;
+      }
+
+
+      .work-img, .first-work img {
+        flex: 15 45%;
+        padding: 20px 30px;
+        justify-content: center;
+      }
+
+      .under-work {
+        flex: 1 100%;
+        text-align: center;
+      }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+      /* this will be applied on any screen smaller than 575px */
+
+      * {
+        justify-content: center;
+      }
+
+      .section-title {
+        width: 95%;
+      }
+
+      .avatar {
+        justify-content: center;
+      }
+
+      .intro p {
+        width: 100%;
+        font-size: 24px;
+      }
+
+      .work {
         flex: 0 100%;
-        flex-wrap: wrap;
-    }
+      }
+
+      .work-img, .first-work img {
+        border: none;
+        flex: 15 30%;
+        max-width: 100%;
+        max-height: auto;
+      }
+
+
+      .contact, .resume {
+        text-align: center;
+        flex: 0 100%;
+      }
   }
