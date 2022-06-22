@@ -156,3 +156,131 @@ header nav ul li a:hover {
     text-shadow: none;
     font-size: 1.55vw;
 }    
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+/* media query for smaller desktop screens and smaller */
+
+@media screen and (max-width: 980px) {
+
+    * {
+        justify-content: center;
+    }
+
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    .intro {
+      text-align: center;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+  
+    .my-work {
+      flex: 0 70%;
+    }
+  
+    .work-img {
+      flex: 1 100%;
+    }
+
+    .first-work {
+        flex: 1 100%;
+        flex-wrap: wrap;
+    }
+  }
+  
+  /* media query for tablets and smaller */
+  
+  @media screen and (max-width: 768px) {
+
+    * {
+        justify-content: center;
+    }
+
+      section {
+          padding: 30px 15px;
+      }
+      
+      .under-work {
+          flex: 1 100%;
+          text-align: center;
+      }
+  
+      .intro {
+          flex: 2 100%;
+          text-align: center;
+          justify-content: center;
+      }
+  
+      .work-img {
+          flex: 0 32%;
+          margin-right: 0;
+          margin-top: 15px;
+          margin-bottom: 15px;
+      }
+  
+      .work {
+          flex: 100%;
+      }
+
+      .first-work {
+        flex: 100%;
+        flex-wrap: wrap;
+      }
+  }
+  
+  /* media query for mobile phones and smaller */
+  
+  @media screen and (max-width: 575px) {
+  
+    * {
+        justify-content: center;
+    }
+      .section-title {
+          width: 95%;
+      }
+  
+      .intro p {
+          width: 100%
+      }
+  
+      .my-work {
+          flex: 0 100%;
+      }
+  
+      .contact {
+          text-align: center;
+      }
+  
+      .info > * {
+          flex: 0 100%;
+      }
+
+    .first-work {
+        flex: 0 100%;
+        flex-wrap: wrap;
+    }
+  }
