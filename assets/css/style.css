@@ -43,6 +43,7 @@ header h1 {
     margin: 0;
     font-size: 44px;
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 /* nav */
@@ -65,14 +66,22 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
+
+header nav ul li a:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* nav end */
 
 .section-title {
     color: var(--secondary-color);
@@ -111,12 +120,11 @@ header nav ul li a:hover {
 /* my work */
 
 .work-img, .first-work img {
-    display: inline-block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    border: 5px var(--secondary-color) solid;
-    padding: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -164,7 +172,6 @@ header nav ul li a:hover {
 }
 
 .info:hover {
-    background: var(--primary-color);
     color: var(--secondary-color);
     font-weight: lighter;
     border-radius: 15px;
@@ -172,12 +179,17 @@ header nav ul li a:hover {
     font-size: 1.55vw;
 }    
 
+.info:visited {
+  text-decoration: none;
+  color: pink;
+}
+
 /* footer */
 
 footer h3 {
     font-weight: lighter;
     font-style: oblique;
-    float: right;
+    text-align: center;
     color: hotpink;
 }
 
