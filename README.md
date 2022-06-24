@@ -25,4 +25,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 https://sramk87.github.io/challenge-2/  
 
-<img width="1440" alt="Screen Shot 2022-06-22 at 7 32 59 PM" src="https://user-images.githubusercontent.com/106551994/175178536-00445661-7914-49c3-9474-ffe742df5d44.png">
+<img width="1439" alt="Screen Shot 2022-06-23 at 8 51 28 PM" src="https://user-images.githubusercontent.com/106551994/175438500-662965a0-2f51-4bb5-be67-dde8ff29e44e.png">
