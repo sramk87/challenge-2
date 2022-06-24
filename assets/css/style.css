@@ -67,7 +67,7 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    color: pink;
+    color: var(--primary-color);
 }
 
 header nav ul li a:hover {
